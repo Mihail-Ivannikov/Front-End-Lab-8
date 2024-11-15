@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" href="./favicon.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Autorepair</title>
+  </head>
+  <body>
+    <header>
+      <div class="upper-header">
+        <div class="logo-container">
+          <h2 class="logo-text">Autorepair</h2>
+        </div>
+        <div class="info-block">
+          <img src="./img/navigator.png" alt="icon" class="info-icon" />
+          <div class="info-content">
+            <h2 class="info-title">ADDRESS</h2>
+            <p class="info-text">721 New York NY 10018</p>
+          </div>
+        </div>
+        <div class="info-block">
+          <img src="./img/phone-icon.png" alt="icon" class="info-icon" />
+          <div class="info-content">
+            <h2 class="info-title">CALL US</h2>
+            <p class="info-text">(+01) 123 456 7890</p>
+          </div>
+        </div>
+
+        <div class="contacts-block">
+          <a> <img src="./img/facebook.png" alt="icon" /></a>
+          <a> <img src="./img/twitter.png" alt="icon" /></a>
+          <a> <img src="./img/insta.svg" alt="icon" /></a>
+          <a> <img src="./img/dribbble.svg" alt="icon" /></a>
+        </div>
+      </div>
+      <div class="lower-header">
+        <div class="menu-wrapper">
+          <a href="#">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">SERVICES</a>
+          <a href="#">PROJECT</a>
+          <a href="#">BLOG</a>
+          <a href="#">CONTACT</a>
+        </div>
+
+        <div class="search-bar-container">
+          <input class="search-input" type="text" placeholder="Search" />
+          <img src="./img/search.png" alt="search-image" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="add-banner-container">
+        <div class="add-slider">
+          <div class="slider-carousel">
+            <div class="slider-item first-slide">
+              <h2 class="slider-small-text">
+                WE ARE BEST CAR PREPARE SERVICES
+              </h2>
+              <h2 class="slider-big-text">Make your car last longer</h2>
+              <a href="#" class="slider-button">BOOK AN APPOINTMENT</a>
+            </div>
+            <div class="slider-item second-slide slider-item-hidden">
+              <h2 class="slider-small-text">
+                WE ARE BEST CAR PREPARE SERVICES
+              </h2>
+              <h2 class="slider-big-text">Make your car last longer</h2>
+              <a href="#" class="slider-button">BOOK AN APPOINTMENT</a>
+            </div>
+          </div>
+
+          <div class="slider-containers">
+            <div class="prev nav-btn" onclick="changeSlide()"><</div>
+            <div class="next nav-btn" onclick="changeSlide()">></div>
+          </div>
+          <div class="page-dots-container" onclick="changeSlide()">
+            <div class="page-dot"></div>
+            <div class="page-dot"></div>
+            <div class="page-dot-fill dot-left"></div>
+          </div>
+        </div>
+
+        <div class="add-bar">
+          <div class="add-bar-logo-wrapper">
+            <img src="./img/piston.png" alt="repair it now" class="add-logo" />
+            <p>Are you ready? <span>Let's repair it now!</span></p>
+          </div>
+          <a href="#" class="add-bar-button">Book an appointment</a>
+        </div>
+      </div>
+
+      <div class="services">
+        <p class="small-title">WE OFFER SERVICES</p>
+        <h2 class="big-title">Our car services</h2>
+        <div class="services-grid">
+          <div class="services-item">
+            <div class="services-logo-wrapper">
+              <img
+                class="services-logo"
+                src="./img/oil-change.png"
+                alt="icon"
+              />
+            </div>
+
+            <div class="services-text">
+              <h2>Oil change</h2>
+              <p>
+                Regular oil changes keep your engine running smoothly and extend
+                its life.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="services-logo-wrapper">
+              <img class="services-logo" src="./img/battery.png" alt="icon" />
+            </div>
+
+            <div class="services-text">
+              <h2>Batteries</h2>
+              <p>
+                We offer quick battery testing and replacement to keep your
+                vehicle powered.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="services-logo-wrapper">
+              <img class="services-logo" src="./img/tow-truck.png" alt="icon" />
+            </div>
+
+            <div class="services-text">
+              <h2>Tow Truck</h2>
+              <p>
+                Our towing service is available 24/7 to assist you when your car
+                breaks down.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="services-logo-wrapper">
+              <img class="services-logo" src="./img/tyre.png" alt="icon" />
+            </div>
+
+            <div class="services-text">
+              <h2>Tire Change</h2>
+              <p>
+                Get professional tire changes to ensure a safe and smooth ride.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="services-logo-wrapper">
+              <img
+                class="services-logo"
+                src="./img/car-engine.png"
+                alt="icon"
+              />
+            </div>
+
+            <div class="services-text">
+              <h2>Engine Repair</h2>
+              <p>
+                Our experts diagnose and repair engine issues to restore optimal
+                performance.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="services-item">
+            <div class="services-logo-wrapper">
+              <img class="services-logo" src="./img/wrench.png" alt="icon" />
+            </div>
+
+            <div class="services-text">
+              <h2>Car Maintenance</h2>
+              <p>
+                Comprehensive car maintenance services keep your vehicle in top
+                condition year-round.
+              </p>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="welcome-box">
+        <div class="video-wrapper">
+          <video id="banner-video" preload="auto" poster="./img/slide-1.jpg" loop>
+            <source
+              src="./img/video/videoplayback.mp4"
+              
+            />
+          </video>
+          <button
+            class="active video-button"
+            id="video-button"
+            onclick="playVideo()"
+          >
+            <img class="play-image" src="./img/play-button.png" alt="Play" />
+          </button>
+        </div>
+        <div class="welcome-text">
+          <p class="welcome-small-title">WELCOME TO AUTOREPAIR</p>
+          <h2 class="welcome-big-title">
+            We help more than 45 years serving customer car
+          </h2>
+          <p class="welcome-normal-text">
+            Welcome to Autorepair! We're your trusted destination for reliable,
+            fast, and affordable car care. Whether you need routine maintenance,
+            emergency repairs, or expert diagnostics, our skilled technicians
+            are here to get you back on the road safely and efficiently. From
+            oil changes and tire replacements to engine repairs and battery
+            testing, we’ve got you covered with top-notch service you can count
+            on. Stop by today or schedule your appointment online for
+            hassle-free car repair! Your vehicle's health is our top priority.
+          </p>
+          <div class="welcome-button-container">
+            <button
+              class="welcome-button welcome-active"
+              onclick="missionDisplay()"
+            >
+              Our Mission
+            </button>
+            <button class="welcome-button" onclick="visionDisplay()">
+              Our Vision
+            </button>
+            <button class="welcome-button" onclick="valueDisplay()">
+              Our Value
+            </button>
+          </div>
+          <div class="mission-block">
+            <p class="mission-text">
+              Our mission is to provide exceptional, reliable, and honest auto
+              repair services that keep our customers' vehicles running safely
+              and efficiently. We are committed to delivering high-quality
+              workmanship, transparent communication, and customer satisfaction
+              with every service we offer.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="statistics">
+        <div class="statistics-item">
+          <h2>45</h2>
+          <p>YEARS OF EXPERIENCED</p>
+        </div>
+        <div class="statistics-item">
+          <h2>8,500</h2>
+          <p>POJECT COMPLITED</p>
+        </div>
+        <div class="statistics-item">
+          <h2>2,342</h2>
+          <p>HAPPY CUSTOMERS</p>
+        </div>
+        <div class="statistics-item">
+          <h2>30</h2>
+          <p>AWARD WINNING</p>
+        </div>
+      </div>
+      <div class="cosultation-block">
+        <img
+          src="./img/consultation-image.png"
+          alt="image"
+          class="consultation-image"
+        />
+        <div class="consultation-form-wrapper">
+          <p>BOOKING AN APPOINTMENT</p>
+          <h2>Free Consultation</h2>
+          <div class="consultation-form-grid">
+            <input
+              type="text"
+              list="services-data"
+              placeholder="Select Service"
+              id="services-input"
+            />
+            <datalist id="services-data">
+              <option>Oil Change</option>
+              <option>Batteries</option>
+              <option>Tow Truck</option>
+              <option>Tire Change</option>
+              <option>Engine Repair</option>
+              <option>Car Maintenance</option>
+            </datalist>
+            <input type="text" placeholder="Your Name" id="name-input" />
+            <input type="date" placeholder="Date" id="date-input" />
+            <input
+              type="text"
+              placeholder="Vehicle number"
+              id="vehicle-input"
+            />
+            <input type="time" placeholder="Time" id="time-input" />
+            <textarea
+              rows="4"
+              cols="50"
+              name="comment"
+              form="usrform"
+              id="message-input"
+            ></textarea>
+            <button class="consultation-button">SEND MESSAGE</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="feedback-block">
+        <p class="feedback-small-title">TESTIMONIES</p>
+        <h2 class="feedback-big-title">Happy Clients & Feedbacks</h2>
+        <div class="feedback-slider">
+          <div class="feedback-slider-carousel">
+            
+          </div>
+          <div class="feedback-slider-dots ">
+            <div class="dot active-dot" onclick="scrollSlider(0)">
+              <div class="inner-dot"></div>
+            </div>
+            <div class="dot" onclick="scrollSlider(1)">
+              <div class="inner-dot "></div>
+            </div>
+            <div class="dot" onclick="scrollSlider(2)">
+              <div class="inner-dot"></div>
+            </div>
+            <div class="dot" onclick="scrollSlider(3)">
+              <div class="inner-dot"></div>
+            </div>
+            <div class="dot" onclick="scrollSlider(4)">
+              <div class="inner-dot"></div>
+            </div>
+            
+            
+          </div> 
+        </div>
+      </div>
+
+      <div class="news-block">
+        <p class="news-small-title">NEWS & BLOG</p>
+        <h2 class="news-big-title">Latest news from our blog</h2>
+        <div class="news-card-container">
+        <div class="news-card">
+          <img src="./img/news/1.jpg" alt="news" class="news-image">
+          <div class="news-person">
+            <img src="./img/persons/1.jpg" alt="person" class="news-person-image">
+            <div class="news-person-data">
+              <p class="news-person-name">Posted by John Doe</p>
+              <p class="news-date">24 february 2020</p>
+            </div>
+          </div>
+          <p class="news-text">
+            Best wheel alignment & air conditioning
+          </p>
+        </div>
+        <div class="news-card">
+          <img src="./img/news/2.jpg" alt="news" class="news-image">
+          <div class="news-person">
+            <img src="./img/persons/2.jpg" alt="person" class="news-person-image">
+            <div class="news-person-data">
+              <p class="news-person-name">Posted by John Doe</p>
+              <p class="news-date">24 february 2020</p>
+            </div>
+          </div>
+          <p class="news-text">
+            Best wheel alignment & air conditioning
+          </p>
+        </div>
+        <div class="news-card">
+          <img src="./img/news/3.jpg" alt="news" class="news-image">
+          <div class="news-person">
+            <img src="./img/persons/4.jpg" alt="person" class="news-person-image">
+            <div class="news-person-data">
+              <p class="news-person-name">Posted by John Doe</p>
+              <p class="news-date">24 february 2020</p>
+            </div>
+          </div>
+          <p class="news-text">
+            Best wheel alignment & air conditioning
+          </p>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <p>&copy; 2024 Autorepair. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
