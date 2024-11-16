@@ -36,14 +36,74 @@
           </div>
         </div>
 
+        <img
+          class="contacts-menu-button"
+          alt="contacts"
+          src="./img/social-media.png"
+          onclick="showContacts()"
+        />
         <div class="contacts-block">
-          <a> <img src="./img/facebook.png" alt="icon" /></a>
-          <a> <img src="./img/twitter.png" alt="icon" /></a>
-          <a> <img src="./img/insta.svg" alt="icon" /></a>
-          <a> <img src="./img/dribbble.svg" alt="icon" /></a>
+          <a>
+            <img src="./img/facebook.png" alt="icon" class="contacts-image"
+          /></a>
+          <a>
+            <img src="./img/twitter.png" alt="icon" class="contacts-image"
+          /></a>
+          <a>
+            <img src="./img/insta.svg" alt="icon" class="contacts-image"
+          /></a>
+          <a>
+            <img src="./img/dribbble.svg" alt="icon" class="contacts-image"
+          /></a>
         </div>
       </div>
+
+      <div class="contacts-popup">
+        <div class="popup-contacts-container">
+          <a>
+            <img src="./img/facebook.png" alt="icon" class="contacts-image"
+          /></a>
+          <a>
+            <img src="./img/twitter.png" alt="icon" class="contacts-image"
+          /></a>
+          <a>
+            <img src="./img/insta.svg" alt="icon" class="contacts-image"
+          /></a>
+          <a>
+            <img src="./img/dribbble.svg" alt="icon" class="contacts-image"
+          /></a>
+        </div>
+        <div class="popop-info-container">
+          <div class="popup-info-block">
+            <img src="./img/navigator.png" alt="icon" class="info-icon" />
+            <div class="info-content">
+              <h2 class="info-title">ADDRESS</h2>
+              <p class="info-text">721 New York NY 10018</p>
+            </div>
+          </div>
+          <div class="popup-info-block">
+            <img src="./img/phone-icon.png" alt="icon" class="info-icon" />
+            <div class="info-content">
+              <h2 class="info-title">CALL US</h2>
+              <p class="info-text">(+01) 123 456 7890</p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./img/close.png"
+          alt="close"
+          class="close-button"
+          onclick="hideContacts()"
+        />
+      </div>
+
       <div class="lower-header">
+        <img
+          src="./img/menu.png"
+          alt="menu"
+          class="burger-menu"
+          onclick="showMenuPopup()"
+        />
         <div class="menu-wrapper">
           <a href="#">HOME</a>
           <a href="#">ABOUT</a>
@@ -57,6 +117,21 @@
           <input class="search-input" type="text" placeholder="Search" />
           <img src="./img/search.png" alt="search-image" />
         </div>
+      </div>
+
+      <div class="menu-popup-wrapper">
+        <a href="#">HOME</a>
+        <a href="#">ABOUT</a>
+        <a href="#">SERVICES</a>
+        <a href="#">PROJECT</a>
+        <a href="#">BLOG</a>
+        <a href="#">CONTACT</a>
+        <img
+          src="./img/close.png"
+          alt="close"
+          class="close-button close-menu"
+          onclick="hideMenuPopup()"
+        />
       </div>
     </header>
 
@@ -204,11 +279,13 @@
       </div>
       <div class="welcome-box">
         <div class="video-wrapper">
-          <video id="banner-video" preload="auto" poster="./img/slide-1.jpg" loop>
-            <source
-              src="./img/video/videoplayback.mp4"
-              
-            />
+          <video
+            id="banner-video"
+            preload="auto"
+            poster="./img/slide-1.jpg"
+            loop
+          >
+            <source src="./img/video/videoplayback.mp4" />
           </video>
           <button
             class="active video-button"
@@ -276,7 +353,7 @@
           <p>AWARD WINNING</p>
         </div>
       </div>
-      <div class="cosultation-block">
+      <div class="consultation-block">
         <img
           src="./img/consultation-image.png"
           alt="image"
@@ -324,28 +401,8 @@
         <p class="feedback-small-title">TESTIMONIES</p>
         <h2 class="feedback-big-title">Happy Clients & Feedbacks</h2>
         <div class="feedback-slider">
-          <div class="feedback-slider-carousel">
-            
-          </div>
-          <div class="feedback-slider-dots ">
-            <div class="dot active-dot" onclick="scrollSlider(0)">
-              <div class="inner-dot"></div>
-            </div>
-            <div class="dot" onclick="scrollSlider(1)">
-              <div class="inner-dot "></div>
-            </div>
-            <div class="dot" onclick="scrollSlider(2)">
-              <div class="inner-dot"></div>
-            </div>
-            <div class="dot" onclick="scrollSlider(3)">
-              <div class="inner-dot"></div>
-            </div>
-            <div class="dot" onclick="scrollSlider(4)">
-              <div class="inner-dot"></div>
-            </div>
-            
-            
-          </div> 
+          <div class="feedback-slider-carousel"></div>
+          <div class="feedback-slider-dots"></div>
         </div>
       </div>
 
@@ -353,47 +410,53 @@
         <p class="news-small-title">NEWS & BLOG</p>
         <h2 class="news-big-title">Latest news from our blog</h2>
         <div class="news-card-container">
-        <div class="news-card">
-          <img src="./img/news/1.jpg" alt="news" class="news-image">
-          <div class="news-person">
-            <img src="./img/persons/1.jpg" alt="person" class="news-person-image">
-            <div class="news-person-data">
-              <p class="news-person-name">Posted by John Doe</p>
-              <p class="news-date">24 february 2020</p>
+          <div class="news-card">
+            <img src="./img/news/1.jpg" alt="news" class="news-image" />
+            <div class="news-person">
+              <img
+                src="./img/persons/1.jpg"
+                alt="person"
+                class="news-person-image"
+              />
+              <div class="news-person-data">
+                <p class="news-person-name">Posted by John Doe</p>
+                <p class="news-date">24 february 2020</p>
+              </div>
             </div>
+            <p class="news-text">Best wheel alignment & air conditioning</p>
           </div>
-          <p class="news-text">
-            Best wheel alignment & air conditioning
-          </p>
-        </div>
-        <div class="news-card">
-          <img src="./img/news/2.jpg" alt="news" class="news-image">
-          <div class="news-person">
-            <img src="./img/persons/2.jpg" alt="person" class="news-person-image">
-            <div class="news-person-data">
-              <p class="news-person-name">Posted by John Doe</p>
-              <p class="news-date">24 february 2020</p>
+          <div class="news-card">
+            <img src="./img/news/2.jpg" alt="news" class="news-image" />
+            <div class="news-person">
+              <img
+                src="./img/persons/2.jpg"
+                alt="person"
+                class="news-person-image"
+              />
+              <div class="news-person-data">
+                <p class="news-person-name">Posted by John Doe</p>
+                <p class="news-date">24 february 2020</p>
+              </div>
             </div>
+            <p class="news-text">Best wheel alignment & air conditioning</p>
           </div>
-          <p class="news-text">
-            Best wheel alignment & air conditioning
-          </p>
-        </div>
-        <div class="news-card">
-          <img src="./img/news/3.jpg" alt="news" class="news-image">
-          <div class="news-person">
-            <img src="./img/persons/4.jpg" alt="person" class="news-person-image">
-            <div class="news-person-data">
-              <p class="news-person-name">Posted by John Doe</p>
-              <p class="news-date">24 february 2020</p>
+          <div class="news-card">
+            <img src="./img/news/3.jpg" alt="news" class="news-image" />
+            <div class="news-person">
+              <img
+                src="./img/persons/4.jpg"
+                alt="person"
+                class="news-person-image"
+              />
+              <div class="news-person-data">
+                <p class="news-person-name">Posted by John Doe</p>
+                <p class="news-date">24 february 2020</p>
+              </div>
             </div>
+            <p class="news-text">Best wheel alignment & air conditioning</p>
           </div>
-          <p class="news-text">
-            Best wheel alignment & air conditioning
-          </p>
         </div>
       </div>
-    </div>
       <footer>
         <p>&copy; 2024 Autorepair. All rights reserved.</p>
       </footer>
