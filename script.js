@@ -10,6 +10,9 @@ const changeSlide = () => {
   sliderItems.forEach((item) => {
     item.classList.toggle("slider-item-hidden");
   });
+  const dotsAmount = document.querySelectorAll(".dot").length;
+  currentFeedbackPage = (currentFeedbackPage + 1) % dotsAmount;
+  scrollSlider(currentFeedbackPage);
 };
 
 setInterval(changeSlide, 5000);
@@ -249,3 +252,4 @@ function showMenuPopup() {
 function hideMenuPopup() {
   menuPopup.style.display = "none";
 }
+
